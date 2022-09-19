@@ -1,5 +1,6 @@
-#include <iostream>
 #include <linked_list.h>
+
+#include <iostream>
 #include <random>
 
 int main() {

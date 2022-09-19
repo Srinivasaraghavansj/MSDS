@@ -15,7 +15,7 @@ template <typename T>
 /// @param len length of array
 void print_array(T* arr, int len) {
     std::cout << "\n[";
-    for (int i = 0; i <= len; i++) {
+    for (int i = 0; i < len; i++) {
         std::cout << arr[i] << ", ";
     }
     std::cout << "]\n";
@@ -29,10 +29,10 @@ void print_array(T* arr, int len) {
 /// @return array with given length and range
 int* uniform_int_array(int len, int min, int max) {
     int* arr;
-	arr = (int*)malloc(sizeof(int)*len);
+    arr = (int*)malloc(sizeof(int) * len);
     std::random_device rd;
     std::uniform_int_distribution<int> ud(min, max);
-    for (int i = 0; i <= len; i++) {
+    for (int i = 0; i < len; i++) {
         arr[i] = ud(rd);
     }
     return arr;
