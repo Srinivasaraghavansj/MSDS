@@ -44,6 +44,7 @@ class LinkedList {
    private:
     Node<T> *uno;
 };
+
 }  // namespace MSDS
 
 #endif  // LINKEDLIST_HPP
